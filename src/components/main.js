@@ -35,7 +35,7 @@ class Main extends Component {
                                 <div className="row d-flex py-0">
                                 <CardTitle className="lead col-10 py-0">{this.state.task} <br/>
                                 <small>{this.state.time}</small></CardTitle>
-                                <button className="col-1 btn btn-success">
+                                <button className="col-1 btn btn-warning rounded-circle">
                                     <i>{times}</i>
                                 </button>
                                 </div>
@@ -44,7 +44,7 @@ class Main extends Component {
                     </div>
                 </Row>
                 <Row>
-                    <button className="btn btn-success btn-lg col-5 mx-auto">Clear All !</button>
+                    <button className="btn btn-success btn-lg col-5 mx-auto rounded-0">Clear All !</button>
                 </Row>
             </Container>
         )
