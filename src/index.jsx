@@ -1,3 +1,4 @@
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
-ReactDOM.render(<h1 className="text-danger">Hello</h1>,document.getElementById("root"))
+import Navbar from "./components/navbar"
+ReactDOM.render(<Navbar></Navbar>,document.getElementById("root"))
