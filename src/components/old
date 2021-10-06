@@ -1,0 +1,15 @@
+     // return(
+            
+        //     <Card>
+        //     <CardBody key={reminder.id}> 
+        //         <div className="row d-flex py-0">
+        //         <CardTitle className="lead col-10 py-0">{reminder.text}<br/>
+        //         <small>{moment(new Date(reminder.date)).fromNow()}</small></CardTitle>
+        //         <button className="col-1 btn btn-warning rounded-circle">
+        //             <i>{times}</i>
+        //         </button>
+        //         </div>
+        //     </CardBody>
+        // </Card>
+        //     )
+        //  })
