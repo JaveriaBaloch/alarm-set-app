@@ -1,3 +1,3 @@
 import ReactDOM from 'react-dom';
-
-ReactDOM.render(<h1>Hello</h1>,document.getElementById("root"))
+import 'bootstrap/dist/css/bootstrap.min.css'
+ReactDOM.render(<h1 className="text-danger">Hello</h1>,document.getElementById("root"))
