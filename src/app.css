@@ -1,0 +1,7 @@
+body{
+    background:linear-gradient(rgba(36, 24, 24, 0.438), rgba(0, 0, 0, 0.473)), url("./clock-g9a8b19b95_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}

@@ -1,12 +1,27 @@
 .navbar{
-    background: rgb(227, 228, 227);
-    border-bottom: 0.4rem solid rgb(105, 105, 105);
+    margin-top: 1rem;
+    background: linear-gradient(to left,rgb(42, 42, 44), rgb(19, 21, 26));
+    position: relative;
+
     .navbar-brand{
-        color: rgb(2, 129, 59);
+        color: rgb(255, 255, 255);
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 2.3rem;
     }
     .fa{
         color: rgb(43, 4, 31);
     }
+}
+.navbar::after,.navbar::before{
+   position: absolute;
+   content: " ";
+   top: 100%;
+   left: 0;
+   background: linear-gradient(to left,rgb(185, 185, 22),orange,rgb(21, 172, 21));
+   height: 16px;
+   width: 100%;
+   z-index: 3;
+}
+.navbar::before{
+    top: -1rem;
 }
