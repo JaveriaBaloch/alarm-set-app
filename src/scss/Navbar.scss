@@ -1,11 +1,12 @@
 .navbar{
-    background: lightcyan;
+    background: rgb(227, 228, 227);
+    border-bottom: 0.4rem solid rgb(105, 105, 105);
     .navbar-brand{
-        color: rgb(43, 4, 31);
-        font-family: 'Luckiest Guy', cursive;
-        font-size: 3rem;
+        color: rgb(2, 129, 59);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 2.3rem;
     }
-    .fas{
+    .fa{
         color: rgb(43, 4, 31);
     }
 }
