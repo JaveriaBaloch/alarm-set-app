@@ -9,7 +9,7 @@ class Nav extends Component{
        return(
             <div className="navbar">
                 <Container>
-                    <NavbarBrand color="success">Alarm-set-app</NavbarBrand>
+                    <NavbarBrand color="success">Alarm-Set-App</NavbarBrand>
                     {iconof}
                 </Container>
             </div>)

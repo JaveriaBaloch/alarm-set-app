@@ -82,7 +82,7 @@ class App extends React.Component{
                     {this.returnReminders()}
                     </div>
                 </Row>
-                <Row>
+                <Row className="py-5">
                     <button className="btn btn-success btn-lg col-5 mx-auto rounded-0"
                     onClick={()=>this.clear()}>Clear All !</button>
                 </Row>
