@@ -7,25 +7,45 @@ import "../scss/main.scss"
 const times=<FontAwesomeIcon icon={faTimes}/>
 const add=<FontAwesomeIcon icon={faPlus}/>
 class Main extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state={
                 task:"walk",
-                time:"9 hours"
+                time:"9 hours",
+                displaytask:null,
+                displaytime:null
         }
+    }
+    timing(){
+      console.log(this.state)
+      this.setState({
+        displaytask:this.state.task,
+        displaytime:this.state.time
+      })
     }
     render() {
         return(
             <Container className="mt-5">
                 <Row className="mb-3 gy-1 gx-0">
                         <div className="col-lg-4 col-md-7 mx-auto my-1">
-                            <input className="form-control form-control-lg rounded-0" type="text" placeholder="Task"/>
+                            <input className="form-control form-control-lg rounded-0" type="text" placeholder="Task"
+                              onChange={(event)=>{
+                                this.setState({
+                                        task:event.target.value,
+                                })
+                            }}/>
                         </div>
                         <div className="col-lg-4 col-md-7 mx-auto my-1">
-                            <input className="form-control form-control-lg rounded-0" type="datetime-local" placeholder="Task"/>
+                            <input className="form-control form-control-lg rounded-0" type="datetime-local"
+                            onChange={(event)=>{
+                                this.setState({
+                                        time:event.target.value,
+                                })
+                            }}/>
                         </div>
                         <div className="col-lg-4 col-md-7 mx-auto my-1">
-                            <Button className="form-control btn-lg rounded-0 border-0 btn-success add">Add {add}</Button>
+                            <Button className="form-control btn-lg rounded-0 border-0 btn-success add"
+                            onClick={()=>this.timing()}>Add {add}</Button>
                         </div>
                 </Row>
                 <Row>
@@ -33,8 +53,8 @@ class Main extends Component {
                         <Card>
                             <CardBody>
                                 <div className="row d-flex py-0">
-                                <CardTitle className="lead col-10 py-0">{this.state.task} <br/>
-                                <small>{this.state.time}</small></CardTitle>
+                                <CardTitle className="lead col-10 py-0">{this.state.displaytask} <br/>
+                                <small>{this.state.displaytime}</small></CardTitle>
                                 <button className="col-1 btn btn-warning rounded-circle">
                                     <i>{times}</i>
                                 </button>
